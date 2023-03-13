@@ -6,7 +6,7 @@ const IconeProjet = (props) => {
     <div className="iconeProjet icone iconeCliquable">
       <button
         onClick={() => {
-          props.fromChild("projet");
+          props.fromChild("ls projet");
         }}
       >
         <img src={Logo} alt="icone terminal" />

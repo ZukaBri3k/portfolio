@@ -344,7 +344,7 @@ section .log {
 
 .listeProjet {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 25px);
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -360,6 +360,9 @@ section .log {
   margin-right: 25px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.freyssupport img {
   border: teal solid 2px;
 }
 
@@ -376,19 +379,21 @@ section .log {
 }
 
 .projetPres p:first-child {
-  color: teal;
   font-family: 'Poppins';
 }
 
+.freyssupport p:first-child {
+  color: teal;
+}
+
 .projetPres a {
-  text-decoration-color: teal;
+  text-decoration: none;
 }
 
 .projetPres h2 {
   color: white;
   height: fit-content;
   padding: 5px;
-  background-color: teal;
   font-family: 'Poppins';
   font-size: 2,5em;
   font-weight: 600;
@@ -396,11 +401,18 @@ section .log {
   margin-top: 0;
 }
 
+.freyssupport h2 {
+  background-color: teal;
+}
+
 .projetPres hr {
   width: 90%;
-  border: teal solid 1px;
   border-radius: 5px;
   margin-top: 25px;
+}
+
+.freyssupport hr {
+  border: teal solid 1px;
 }
 
 .projetPres div div {
@@ -410,14 +422,50 @@ section .log {
 
 .techno {
   align-self: flex-start;
-  background-color: teal;
+  
   width: fit-content;
   color: white;
   font-family: 'Poppins';
   padding: 3%;
 }
 
+.freyssupport .techno {
+  background-color: teal;
+}
+
 .techno b {
   text-decoration: underline;
 }
-//test
+
+.puissance4 img{
+  border: #920f32 solid 2px;
+}
+
+.puissance4 h2 {
+  background-color: #920f32;
+}
+
+.puissance4 .techno {
+  background-color: #920f32;
+}
+
+.puissance4 p:first-child {
+  color: #920f32;
+}
+
+.aide div + div{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aide div a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poppins';
+  background-color: #920f32;
+  padding: 20px;
+}

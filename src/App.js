@@ -25,7 +25,7 @@ function App() {
       setDisplayAide(!displayAide);
     } else if (data.toLowerCase() === "terminal") {
       setDisplayTerminal(!displayTerminal);
-    } else if (data.toLowerCase() === "projet") {
+    } else if (data.toLowerCase() === "ls projet") {
       setDisplayProjet(!displayProjet);
     }
     if (data.toLowerCase() === "quitter") {

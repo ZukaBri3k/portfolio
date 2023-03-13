@@ -18,7 +18,15 @@ const Aide = (props) => {
         </div>
         <h1>Aide sur les commandes</h1>
       </div>
-      <h1>Aide</h1>
+      <div>
+        <a
+          href="https://github.com/ZukaBri3k/portfolio/blob/main/README.md"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Cliquez ici pour obtenir de l'aide !
+        </a>
+      </div>
     </section>
   );
 };
