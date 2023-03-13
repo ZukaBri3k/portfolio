@@ -3,7 +3,7 @@ import Logo from "../assets/images/logoTerminal.webp";
 
 const IconeTerminal = (props) => {
   return (
-    <div className="iconeTerminal icone">
+    <div className="iconeTerminal icone iconeCliquable">
       <button
         onClick={() => {
           props.fromChild("terminal");

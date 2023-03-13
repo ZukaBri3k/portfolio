@@ -8,6 +8,10 @@ body {
   height: 100vh;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .app {
   position: relative;
 }
@@ -61,7 +65,7 @@ footer {
   align-items: center;
   position: absolute;
   bottom: 10px;
-  left: calc(50% - 65px);
+  left: calc(50% - 140px);
   z-index: 0;
   padding-left: 15px;
   padding-right: 15px;
@@ -73,6 +77,30 @@ footer div {
   margin-right: 25px;
   height: 55px;
   border-radius: 10px;
+}
+
+footer button {
+  background-color: rgba(40, 40, 40, 0%);
+  margin: 0;
+  margin-top: 2px;
+  border: none;
+  margin-left: 10px;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+footer button img {
+  margin: 0;
+  padding: 3px;
+  width: 54px;
+  height: 54px;
+  border: #000 solid 1px;
+  background-color: #FFF;
+}
+
+footer img:hover {
+  border: #000 solid 2px;
 }
 
 section {
@@ -280,7 +308,115 @@ section .log {
   margin: 0;
 }
 
-.iconeTerminal button {
+.iconeCliquable button {
   background-color: rgba(40, 40, 40, 0%);
   border: none;
+}
+
+.iconeCV {
+  right: calc(40% - 37.5%);
+  top: 5%;
+}
+
+.iconeProjet {
+  right: calc(40% - 37.5%);
+  top: calc(5% + 125px);
+}
+
+.iconeProjet img {
+  background-color: rgba(40, 40, 40, 0%);
+  border: none;
+}
+
+.projet {
+  position: absolute;
+  left: calc(50% - 45%);
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+}
+
+.listeProjet {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.projetPres {
+  padding-top: 0;
+}
+
+.projetPres img {
+  width: 100%;
+  height: 100%;
+  margin-right: 25px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: teal solid 2px;
+}
+
+.projetPres div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.projetPres div a {
+  width: 50%;
+  height: fit-content;
+  padding: 5%;
+}
+
+.projetPres p:first-child {
+  color: teal;
+  font-family: 'Poppins';
+}
+
+.projetPres a {
+  text-decoration-color: teal;
+}
+
+.projetPres h2 {
+  color: white;
+  height: fit-content;
+  padding: 5px;
+  background-color: teal;
+  font-family: 'Poppins';
+  font-size: 2,5em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+}
+
+.projetPres hr {
+  width: 90%;
+  border: teal solid 1px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.projetPres div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.techno {
+  align-self: flex-start;
+  background-color: teal;
+  width: fit-content;
+  color: white;
+  font-family: 'Poppins';
+  padding: 3%;
+}
+
+.techno b {
+  text-decoration: underline;
 }

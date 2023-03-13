@@ -1,15 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import Logo from "../assets/images/vsCodeLogo.webp";
 import Corbeille from "../assets/images/corbeille.webp";
+import DockAide from "./DockAide";
 
-export default class Dock extends Component {
-  render() {
-    return (
-      <footer>
-        <img src={Logo} alt="Logo de visual studio code" />
-        <div></div>
-        <img src={Corbeille} alt="Corbeille" />
-      </footer>
-    );
-  }
-}
+const Dock = (props) => {
+  return (
+    <footer>
+      <img src={Logo} alt="Logo de visual studio code" />
+      <DockAide fromChild={props.fromChild} />
+      <div></div>
+      <img src={Corbeille} alt="Corbeille" />
+    </footer>
+  );
+};
+
+export default Dock;
